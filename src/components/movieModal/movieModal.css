@@ -1,0 +1,56 @@
+.modal_container {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    padding: 1rem;
+}
+
+.modal {
+    background-color: hsl(0, 0%, 100%);
+    max-height: 90vh;
+    overflow: auto;
+    padding: 2rem;
+    position: relative;
+    max-width: 60rem;
+    width: 100%;
+}
+
+.modal_title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.close_modal {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 3rem;
+}
+
+.modal_description {
+    display: flex;
+    gap: 2rem;
+}
+.modal_image__container,
+.about {
+    flex: 1;
+}
+.modal_image {
+    max-width: 27rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 37.5em) {
+    .modal_description {
+        flex-direction: column;
+    }
+    .modal_image__container {
+        display: flex;
+        justify-content: center;
+    }
+}

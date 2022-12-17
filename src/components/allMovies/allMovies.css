@@ -1,0 +1,27 @@
+.show_all__movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 28rem));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.button_group {
+    margin: 6rem 0;
+    gap: 10rem;
+}
+
+.button_group > button {
+    width: 13rem;
+}
+
+.button_group > button.disabled {
+    background-color: hsl(0, 0%, 65%);
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 28em) {
+    .button_group {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

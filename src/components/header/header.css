@@ -1,0 +1,47 @@
+.header {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(220, 11%, 78%);
+}
+.logo {
+    width: 15.6rem;
+}
+.search_container {
+    cursor: pointer;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(220, 11%, 78%);
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+.search_container > img {
+    width: 2rem;
+}
+.search_container > input::placeholder {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 37.5em) {
+    .header {
+        gap: 1.4rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+    }
+    .logo_container {
+        background-color: #000;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 0.4rem;
+    }
+    .search_container {
+        width: 100%;
+    }
+    .search_container > input {
+        width: 100%;
+    }
+}

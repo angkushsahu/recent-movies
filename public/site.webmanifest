@@ -1,6 +1,7 @@
 {
   "name": "Recent Movies",
   "short_name": "recent-movies",
+  "description": "A web application where you can see latest movies.",
   "icons": [
     {
       "src": "favicon.ico",

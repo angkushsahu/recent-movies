@@ -18,6 +18,7 @@ const AllMovies = () => {
             return;
         }
         setPageNumber((prev) => prev - 1);
+        window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
     };
 
     const decrementPageNumber = () => {
@@ -25,6 +26,7 @@ const AllMovies = () => {
             return;
         }
         setPageNumber((prev) => prev + 1);
+        window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
     };
 
     const getAllMovies = useCallback(async () => {
